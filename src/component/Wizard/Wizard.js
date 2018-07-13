@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Wizard.css";
 
 class Wizard extends Component {
@@ -12,6 +12,12 @@ class Wizard extends Component {
       state: "",
       zipcode: ""
     };
+
+    this.changeName = this.changeName.bind(this);
+    this.changeAddress = this.changeAddress.bind(this);
+    this.changeCity = this.changeCity.bind(this);
+    this.changeState = this.changeState.bind(this);
+    this.changeZip = this.changeZip.bind(this);
   }
   changeName(val) {
     this.setState({

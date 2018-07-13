@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import House from "../House/House";
+import axios from "axios";
 
 class Dashboard extends Component {
   constructor() {
@@ -9,10 +10,26 @@ class Dashboard extends Component {
       houses: []
     };
   }
+
+  componentDidMount() {
+    axios.get("/api/houses").then(res => {
+      console.log(res);
+      this.setState({
+        houses: res.data
+      });
+    });
+  }
+
   render() {
     const { houses } = this.state;
-    let allHouses = this.state.houses.map((elem, id) => {
-      return <div allHouses key={id} />;
+    let allHouses = this.state.houses.map((houses, id) => {
+      return (
+        <div key={id}>
+          <p>{houses.name}</p>
+          <p>{houses.address}</p>
+          <p>{houses.city}</p>
+        </div>
+      );
     });
     return (
       <div>

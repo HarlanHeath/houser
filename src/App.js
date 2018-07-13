@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./component/Header/Header";
-import { HashRouter as Router, Link } from "react-router-dom";
+//import { HashRouter as Router, Link } from "react-router-dom";
 import routes from "./routes";
 
 import "./App.css";
