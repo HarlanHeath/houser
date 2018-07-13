@@ -77,6 +77,9 @@ class WizardOne extends Component {
         <Link to="/">
           <button onClick={() => console.log(this.state)}>Cancel</button>
         </Link>
+        <Link to="/WizardTwo">
+          <button className="margin-btn"> Next </button>
+        </Link>
       </div>
     );
   }

@@ -22,7 +22,7 @@ class Dashboard extends Component {
   }
 
   render() {
-    const { houses } = this.state;
+    // const { houses } = this.state;
     let allHouses = this.state.houses.map((houses, id) => {
       return (
         <div key={id}>
@@ -37,7 +37,7 @@ class Dashboard extends Component {
         Dashboard
         <div className="house-contain">{allHouses}</div>
         <House />
-        <Link to="/wizard">
+        <Link to="/wizardOne">
           <button>Add New Property</button>
         </Link>
       </div>

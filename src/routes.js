@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Dashboard from "./component/Dashboard/Dashboard";
 import WizardOne from "./component/WizardOne/WizardOne";
-import WizardTwo from "./component/WizardTwo/WizardThree";
+import WizardTwo from "./component/WizardTwo/WizardTwo";
 import WizardThree from "./component/WizardThree/WizardThree";
 
 export default (
