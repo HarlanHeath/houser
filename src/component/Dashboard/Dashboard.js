@@ -1,3 +1,4 @@
+import "./Dashboard.css";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import House from "../House/House";
@@ -34,7 +35,7 @@ class Dashboard extends Component {
     return (
       <div>
         Dashboard
-        <div>{allHouses}</div>
+        <div className="house-contain">{allHouses}</div>
         <House />
         <Link to="/wizard">
           <button>Add New Property</button>

@@ -21,7 +21,7 @@ massive(process.env.CONNECTION_STRING)
   });
 
 app.get(`/api/houses`, controller.allHouses);
-// app.put(`/api/addhouses`, controller.addHouses);
+app.put(`/api/addhouses`, controller.addHouses);
 // // app.post();
 // app.delete(`/api/removehouses`, controller.deleteHouses);
 
